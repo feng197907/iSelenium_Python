@@ -20,6 +20,8 @@ class ISelenium(unittest.TestCase):
 
     def setUp(self):
         config = self.get_config()
+        print(config.get('driver', 'chrome_driver'))
+        print('setUp ++++++++++++++++++++++')
 
         # 控制是否采用无界面形式运行自动化测试
         try:
